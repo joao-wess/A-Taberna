@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Residência - A Taberna</title>
+    <link rel="stylesheet" href="formulario.css" />
+</head>
+<body>        <!-- Cabeçalho -->
+      <header>
+        <figure>
+            <a href="../index.html">
+            <img src="../assets/logo1.svg" alt="LogoTipo" width="100px">
+            </a>
+        </figure>
+      </header>
+
+    <main>
+        <form action="#" method="POST" class="form-cadastro">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required />
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"
+                        pattern="\(\d{2}\) \d{5}-\d{4}" placeholder="(XX) XXXXX-XXXX" required />
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="documento">Documento (CPF/CNPJ):</label>
+                <input type="text" id="documento" name="documento" required />
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço da Residência</legend>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000" required />
+
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro" name="logradouro" required />
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" required />
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento" />
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required />
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required />
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione...</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalhes do Espaço</legend>
+                <label for="tipo-espaco">Tipo de Espaço:</label>
+                <select id="tipo-espaco" name="tipo-espaco" required>
+                    <option value="">Selecione...</option>
+                    <option value="quarto">Quarto Privativo</option>
+                    <option value="sala">Espaço na Sala</option>
+                    <option value="casa">Casa Completa</option>
+                </select>
+
+                <label for="capacidade">Capacidade de Pessoas:</label>
+                <input type="number" id="capacidade" name="capacidade" min="1" required />
+
+                <label for="pets">Aceita Pets?</label>
+                <select id="pets" name="pets" required>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+
+                <label for="acessibilidade">Espaço Acessível (PCD)?</label>
+                <select id="acessibilidade" name="acessibilidade" required>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+
+                <label for="lgbt">Acolhimento a Pessoas LGBTIA+?</label>
+                <select id="lgbt" name="lgbt" required>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Segurança e Disponibilidade</legend>
+                <label for="validacao">Passará por Validação do Governo?</label>
+                <select id="validacao" name="validacao" required>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+
+                <label for="disponibilidade">Disponibilidade a partir de:</label>
+                <input type="date" id="disponibilidade" name="disponibilidade" required />
+
+                <label for="duracao">Duração Máxima (em dias):</label>
+                <input type="number" id="duracao" name="duracao" min="1" required />
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações Adicionais</legend>
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" rows="4" placeholder="Informações adicionais..."></textarea>
+
+                <label>
+                    <input type="checkbox" id="consentimento" name="consentimento" required />
+                    Concordo com a <a href="#">política de privacidade</a> e os termos de uso.
+                </label>
+            </fieldset>
+
+            <div class="botoes">
+                <button type="submit">Enviar Cadastro</button>
+                <button type="reset">Limpar Formulário</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+      <p>
+          &copy; Hackathon Recode Pro AI [Equipe 20] - Todos os direitos reservados
+      </p>
+  </footer>
+</body>
+</html>

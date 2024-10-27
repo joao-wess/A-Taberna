@@ -1,0 +1,119 @@
+/* Reset básico para remover margens e paddings padrão */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo geral do corpo e alinhamento do conteúdo */
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+
+/* Estilo do cabeçalho */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-bottom: 2px solid #3B7D5D;
+  padding: 1rem;
+  margin-bottom: 70px; 
+  width: 100%;
+} 
+
+/*main*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Estilo principal do formulário */
+.form-cadastro {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Estilo para fieldsets */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+fieldset + fieldset {
+  margin-top: 60px;
+}
+
+/* Alinhamento dos labels e inputs */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilo dos botões */
+.botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  background-color: #2C3E50;
+  color: white;
+  font-size: rem;
+  font-weight: 400;
+  padding: 1.5rem 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 3.8rem;
+}
